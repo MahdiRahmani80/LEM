@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Play"
+    android:layoutDirection="rtl"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Music Name :"
+        android:layout_alignParentLeft="true"
+        android:fontFamily="@font/yekan"
+        android:layout_marginLeft="8dp"
+        android:textColor="@color/white"
+        android:textSize="14dp"/>
+
+    <EditText
+        android:layout_marginTop="17dp"
+        android:id="@+id/Music_Name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="10dp"
+        android:backgroundTint="@color/calbasi"
+        android:fontFamily="@font/vazir"
+        android:hint="Music Name"
+        android:paddingLeft="4dp"
+        android:paddingBottom="-3dp"
+        android:singleLine="true"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:text="Artist :"
+        android:layout_below="@+id/Music_Name"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        android:fontFamily="@font/yekan"
+        android:textColor="@color/white"
+        android:textSize="14dp"/>
+
+    <EditText
+        android:id="@+id/Artist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Music_Name"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginRight="10dp"
+        android:backgroundTint="@color/calbasi"
+        android:fontFamily="@font/vazir"
+        android:hint="Artist"
+        android:paddingLeft="4dp"
+        android:paddingBottom="-3dp"
+        android:singleLine="true"
+        android:textColor="@color/white" />
+
+
+    <EditText
+        android:id="@+id/URL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Artist"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="50dp"
+        android:backgroundTint="@color/calbasi"
+        android:fontFamily="@font/vazir"
+        android:hint="https://example.com/m.mp3"
+        android:paddingLeft="4dp"
+        android:paddingBottom="-3dp"
+        android:singleLine="true"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/Artist"
+        android:text="URL : "
+        android:textColor="@color/white"
+        android:layout_marginLeft="10dp"
+        android:textSize="14dp"
+        android:fontFamily="@font/yekan"/>
+
+    <ImageView
+        android:layout_width="28dp"
+        android:layout_height="33dp"
+        android:layout_below="@+id/Artist"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="12dp"
+        android:src="@drawable/search"
+        android:id="@+id/Search"/>
+
+
+    <ScrollView
+        android:id="@+id/sv_en"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/URL">
+
+        <EditText
+            android:id="@+id/EN_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="100dp"
+            android:layout_marginRight="10dp"
+            android:backgroundTint="@color/calbasi"
+            android:fontFamily="@font/vazir"
+            android:hint="English text"
+            android:maxHeight="150dp"
+            android:paddingLeft="4dp"
+            android:paddingBottom="-3dp"
+            android:textColor="@color/white" />
+    </ScrollView>
+
+    <ScrollView
+        android:id="@+id/sv_fa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sv_en">
+
+        <EditText
+            android:id="@+id/FA_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="100dp"
+            android:layout_marginRight="10dp"
+            android:backgroundTint="@color/calbasi"
+            android:fontFamily="@font/vazir"
+            android:hint="ترجمه فارسی"
+            android:maxHeight="150dp"
+            android:paddingLeft="4dp"
+            android:paddingBottom="-3dp"
+            android:textColor="@color/white" />
+    </ScrollView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <Button
+        android:layout_width="110dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"
+        android:layout_below="@+id/sv_fa"
+        android:layout_alignParentBottom="false"
+        android:background="@drawable/donate_bg"
+        android:fontFamily="@font/yekan"
+        android:text="Edit Song"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="17dp"
+        android:id="@+id/ADD_SONG"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/yekan"
+        android:textSize="14dp"
+        android:layout_alignParentLeft="true"
+        android:text="English :"
+        android:textColor="@color/white"
+        android:layout_below="@+id/URL"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/white"
+        android:textSize="14dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/sv_en"
+        android:text="Persian :"/>
+
+</RelativeLayout>

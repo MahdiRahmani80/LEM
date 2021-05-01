@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/Item_music"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/calbasi"
+    android:layoutDirection="rtl">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dp"
+        android:background="@color/Play">
+
+    <ImageView
+        android:layout_width="65dp"
+        android:layout_height="60dp"
+        android:src="@drawable/item_music"
+        android:layout_margin="5dp"
+        android:layout_alignParentLeft="true"/>
+
+        <TextView
+            android:id="@+id/Item_Music_Name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="85dp"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/vazir"
+            android:text="Music Name"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:layout_alignParentLeft="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Item_Music_Name"
+            android:layout_marginLeft="85dp"
+            android:layout_marginTop="-2dp"
+            android:fontFamily="@font/vazir"
+            android:text="Artist"
+            android:textColor="#9FDDE7FA"
+            android:textSize="15dp"
+            android:id="@+id/Artist"
+            android:layout_alignParentLeft="true"/>
+
+    </RelativeLayout>
+</LinearLayout>

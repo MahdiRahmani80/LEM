@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Play"
+    android:layoutDirection="rtl">
+
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="30dp"
+        android:src="@drawable/fav"
+        android:id="@+id/FAV"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/FAV"
+        android:layout_marginRight="42dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="3dp"
+        android:textColor="@color/white"
+        android:textSize="12dp"
+        android:fontFamily="@font/vazir"
+        android:text="Favourite"/>
+
+    <ImageView
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:src="@drawable/setting"
+        android:id="@+id/Setting"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Setting"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/white"
+        android:textSize="12dp"
+        android:fontFamily="@font/vazir"
+        android:text="Setting"
+        android:layout_centerHorizontal="true"/>
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginLeft="30dp"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/new_music"
+        android:id="@+id/NEW"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Songs"
+        android:fontFamily="@font/vazir"
+        android:textSize="12dp"
+        android:textColor="@color/white"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="2dp"
+        android:layout_below="@+id/NEW"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/NEW"
+        android:background="@color/pink"
+        android:layout_marginTop="33dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/>
+
+
+
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="28dp"
+        android:layout_below="@+id/FAV"
+        android:layout_marginTop="48dp"
+        android:src="@drawable/stars"
+        android:id="@+id/Star"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Star"
+        android:layout_marginTop="3dp"
+        android:textColor="@color/white"
+        android:textSize="10dp"
+        android:fontFamily="@font/vazir"
+        android:layout_marginRight="30dp"
+        android:text="Give Stars"/>
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/Star"
+        android:id="@+id/Donate"
+        android:layout_marginRight="25dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="45dp"
+        android:src="@drawable/donate"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Donate"
+        android:layout_marginTop="5dp"
+        android:textSize="10dp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/vazir"
+        android:text="Donate"
+        android:layout_marginRight="33dp" />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/Donate"
+        android:layout_marginTop="33dp"
+        android:src="@drawable/about"
+        android:layout_marginRight="25dp"
+        android:id="@+id/About"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:layout_marginRight="37dp"
+        android:fontFamily="@font/vazir"
+        android:textSize="10dp"
+        android:textColor="@color/white"
+        android:text="About"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/About"/>
+
+<!-- Right -->
+    <LinearLayout
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/pink"
+        android:layout_below="@+id/FAV"
+        android:layout_marginTop="31dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="100dp"
+        android:layout_above="@+id/About"
+        android:layout_marginBottom="-120dp"/>
+
+<!-- Left -->
+    <LinearLayout
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/pink"
+        android:layout_below="@+id/FAV"
+        android:layout_marginTop="32dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp"
+        android:layout_above="@+id/Donate"
+        android:layout_marginBottom="-215dp"/>
+
+    <!-- One -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginRight="101dp"
+        android:layout_marginLeft="21dp"
+        android:background="@color/black"
+        android:layout_below="@+id/FAV"
+        android:layout_marginTop="32dp"
+        android:id="@+id/MostPlay">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:textColor="@color/white"
+            android:layout_alignParentRight="true"
+            android:fontFamily="@font/vazir"
+            android:text="بیشترین پخش های شما"
+            android:gravity="center"
+            android:textSize="17dp"
+            android:foregroundGravity="center"
+            android:layout_centerHorizontal="true"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/pink"/>
+    </RelativeLayout>
+<!-- Tow -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginRight="101dp"
+        android:layout_marginLeft="21dp"
+        android:background="@color/black"
+        android:layout_below="@+id/MostPlay"
+        android:layout_marginTop="0dp"
+        android:id="@+id/LastPlay">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="17dp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/vazir"
+            android:text="آخرین پخش های شما"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/pink"/>
+    </RelativeLayout>
+
+    <!-- three -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginRight="101dp"
+        android:layout_marginLeft="21dp"
+        android:background="@color/black"
+        android:layout_below="@+id/LastPlay"
+        android:layout_marginTop="0dp"
+        android:id="@+id/MostLike">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="17dp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/vazir"
+            android:text="بیشترین لایک ها "
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/pink"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginRight="101dp"
+        android:layout_marginLeft="21dp"
+        android:background="@color/black"
+        android:layout_below="@+id/MostLike"
+        android:layout_marginTop="0dp"
+        android:id="@+id/Search_home_fr">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="17dp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/vazir"
+            android:text="جستجو"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/pink"/>
+    </RelativeLayout>
+
+</RelativeLayout>

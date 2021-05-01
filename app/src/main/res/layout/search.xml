@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Play">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:hint="Search"
+        android:backgroundTint="@color/calbasi"
+        android:paddingLeft="15dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:fontFamily="@font/vazir"
+        android:id="@+id/ed_Search"/>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/rec_Search"
+        android:layout_below="@+id/ed_Search"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_above="@id/bg_search"/>
+
+    <TextView
+        android:id="@+id/bg_search"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_marginTop="26dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/donate_bg"
+        android:gravity="center"
+        android:textSize="18dp"
+        android:fontFamily="@font/vazir"
+        android:textColor="@color/black"
+        android:text="Search at 'Artist' and 'Song name' "/>
+
+</RelativeLayout>

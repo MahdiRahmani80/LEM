@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Play">
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/Recycler_id"
+        android:layout_marginBottom="96dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="93dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/play_home"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:fontFamily="@font/vazir"
+        android:textColor="@color/white"
+        android:text="LEM, Learn English Music"/>
+
+
+
+</RelativeLayout>

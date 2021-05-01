@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="95dp"
+    android:layout_alignParentBottom="true"
+    android:background="@drawable/play_home"
+    android:id="@+id/Music"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layoutDirection="ltr">
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:id="@+id/Play_music_id"
+        android:src="@drawable/play"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Music Name"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="95dp"
+        android:layout_marginBottom="2dp"
+        android:fontFamily="@font/vazir"
+        android:textSize="17dp"
+        android:id="@+id/Music_Name"
+        android:textColor="@color/white"/>
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Music_Name"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="85dp"
+        android:layoutDirection="ltr"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="-4dp"
+        android:id="@+id/SeekBar" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00:00"
+        android:id="@+id/start"
+        android:layout_below="@+id/SeekBar"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="98dp"
+        android:layout_marginTop="-2dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00:00"
+        android:id="@+id/end"
+        android:layout_below="@+id/SeekBar"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="-2dp"/>
+
+
+</RelativeLayout>

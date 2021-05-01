@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Report"
+    android:background="@color/Play">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/music_header"
+        android:gravity="center"
+        android:id="@+id/Header">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/vazir"
+            android:text="Report"/>
+    </RelativeLayout>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Header"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="20dp"
+        android:backgroundTint="@color/calbasi"
+        android:layout_alignParentRight="true"
+        android:hint="Your Name ..."
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:fontFamily="@font/vazir"
+        android:id="@+id/Name" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Header"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/vazir"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp"
+        android:textSize="18dp"
+        android:textColor="@color/white"
+        android:text="Name :"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Name"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="100dp"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/calbasi"
+        android:hint="Report text ..."
+        android:fontFamily="@font/vazir"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:id="@+id/Report"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Name"
+        android:text="Report :"
+        android:textSize="18dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="18dp"
+        android:maxHeight="100dp" />
+
+    <Button
+        android:layout_width="110dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/Report"
+        android:layout_alignParentRight="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/donate_bg"
+        android:fontFamily="@font/yekan"
+        android:text="Report"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="17dp"
+        android:id="@+id/btn_Report"/>
+
+
+</RelativeLayout>
